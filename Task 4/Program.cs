@@ -2,3 +2,26 @@
 // 2, 3, 7 -> 7
 // 44 5 78 -> 78
 // 22 3 9 -> 22
+
+Console.Write("Введите первое число: "); // Запрос на ввод трех чисел
+int a = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите второе число: ");
+int b = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите третье число: ");
+int c = Convert.ToInt32(Console.ReadLine());
+
+int max = a;  // Если первое число максимальное
+
+if (b > max)
+{
+    max = b;  // Если второе число больше, то оно становится максимальным
+}
+
+if (c > max)
+{
+    max = c;  // Если третье число больше, то оно становится максимальным
+}
+
+Console.WriteLine("Максимальное число: " + max);
